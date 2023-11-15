@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp5.PersonalInformation"
+             Title="PersonalInformation">
+    <Grid RowDefinitions="50,10,50,10,50,10,50" ColumnDefinitions="*,100,300,*" Margin="0,100,0,0">
+        <Label Text="NationalCode" Grid.Column="1" Grid.Row="0" VerticalOptions="Center"></Label>
+        <Entry Placeholder="Enter your NationalCode" Text="{Binding NationalCode}" Grid.Column="2" Grid.Row="0"></Entry>
+
+        <Label Text="Email" Grid.Column="1" Grid.Row="2" VerticalOptions="Center"></Label>
+        <Entry Placeholder="Enter your Email" Text="{Binding Email}" Grid.Column="2" Grid.Row="2"></Entry>
+        
+        <Label Text="BirthDate" Grid.Row="4" Grid.Column="1" VerticalOptions="Center"></Label>
+        <DatePicker Date="{Binding BirthDate}" Grid.Column="2" Grid.Row="4"></DatePicker>
+
+        <Button Text="Next" Grid.Row="6" Grid.Column="2" Clicked="Button_Clicked"></Button>
+      
+    </Grid>
+</ContentPage>
